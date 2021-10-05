@@ -1,3 +1,4 @@
+/* GLOBAL */
 *{
   margin: 0;
   padding: 0;
@@ -6,4 +7,65 @@
 
 body{
   font-family: 'Montserrat', sans-serif;
+}
+
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* MAIN */
+.container{
+  width: 100vw;
+  height: calc(100vh - 80px);
+  background-color: purple;
+}
+.sidenav{
+  width: 20%;
+  height: 100%;
+  background-color: yellow;
+}
+.container .main{
+  width: 80%;
+  height: 100%;
+  background-color: green;
+  overflow: auto;
+}
+.main, .sidenav{
+  float: left;
+}
+.top-main-nav{
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 80px;
+  background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  height: 80px;
+  background-color: hotpink;
 }

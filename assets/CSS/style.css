@@ -27,13 +27,13 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 200px;
+  width: 250px;
   height: 100%;
   background-color: #000;
   color: #fff;
 }
 .container .main{
-  width: calc(100% - 200px);
+  width: calc(100% - 250px);
   height: 100%;
   background-color: #141922;
   overflow: auto;
@@ -43,10 +43,13 @@ body{
   float: left;
 }
 .top-main-nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   position: fixed;
   top: 0;
   z-index: 999;
-  width: 100%;
+  width: calc(100% - 250px);
   height: 80px;
   background-color: rgba(7, 11, 18, .8);
 }
@@ -117,11 +120,67 @@ body{
 }
 
 /* MAIN SECTION  */
-
-
+.head-btn{
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  padding: 5px 35px;
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 14px;
+}
 
 /* FOOTER */
 footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 80px;
   background-color: #282828;
+  color: #fff;
+}
+
+/* Footer left */
+.foot-left{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+}
+.song-info{
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.like-playlist i {
+  padding: 5px;
+}
+.song-info, .like-playlist{
+  float: left;
+}
+.foot-left .band-img{
+  width: 50px;
+  height: 50px;
+}
+.foot-left .band-img img{
+  width: 100%;
+}
+.band-song-name{
+  font-size: 12px;
+  margin-left: 15px;
+}
+.band-img, .band-song-name{
+  float: left;
+}
+
+/* footer central */
+.foot-central{
+  background-color: teal;
+}
+
+
+/* footer left */
+.foot-right{
+  background-color: aqua;
+
 }

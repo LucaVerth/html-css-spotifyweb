@@ -15,23 +15,29 @@ body{
   clear: both;
 }
 
+/*  ALTEZZE E MISURE DA RIVEDERE */
 
-/* MAIN */
+/* MAIN LAYOUT*/
 .container{
   width: 100vw;
   height: calc(100vh - 80px);
   background-color: purple;
 }
 .sidenav{
-  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
   height: 100%;
-  background-color: yellow;
+  background-color: #000;
+  color: #fff;
 }
 .container .main{
-  width: 80%;
+  width: calc(100% - 200px);
   height: 100%;
-  background-color: green;
+  background-color: #141922;
   overflow: auto;
+  padding-top: 80px;
 }
 .main, .sidenav{
   float: left;
@@ -42,30 +48,80 @@ body{
   z-index: 999;
   width: 100%;
   height: 80px;
-  background-color: red;
+  background-color: rgba(7, 11, 18, .8);
 }
 
+/* Side nav */
+.nav-bar-container{
+  padding: 15px; 
+}
+.logo img{
+  width: 80%;
+  margin-bottom: 30px;
+}
+.nav1{
+  margin-bottom: 30px;
+}
+.nav2 h5{
+  margin-bottom: 10px;
+}
+.nav1 ul{
+  list-style: none;
+}
+.nav1 ul li{
+  margin-bottom: 10px;
+}
+.nav1 ul li a img{
+  width: 15%;
+  vertical-align: middle;
+}
+.nav1 ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.playlist-add{
+  margin-bottom: 10px;
+}
+.playlist-add a i{
+  background-color: grey;
+  padding: 10px;
+  color: #000;
+}
+.playlist ul{
+  list-style: none;
+  overflow: auto;
+}
+.playlist ul li{
+  padding: 10px 0;
+  font-size: 14px;
+}
+.playlist ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+#profile img{
+  width: 30px;
+  height: 30px;
+  background-color: grey;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.line:after{
+  width: 100%;
+  margin: 10px 0;
+  content: "";
+  display: block;
+  border-bottom: 1px solid grey;
+}
+
+/* MAIN SECTION  */
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* FOOTER */
 footer{
   height: 80px;
-  background-color: hotpink;
+  background-color: #282828;
 }

@@ -81,7 +81,7 @@ aside, .main{
 }
 .main-nav ul li a{
   text-decoration: none;
-  color: #fff;
+  color: #7C7E83;
   font-size: 14px;
   vertical-align: middle;
 }
@@ -98,6 +98,10 @@ aside, .main{
 .playlist-add{
   margin-bottom: 10px;
 }
+.playlist-add a{
+  text-decoration: none;
+  color: #7C7E83;
+}
 .playlist-add a i{
   background-color: grey;
   padding: 10px;
@@ -112,7 +116,7 @@ aside, .main{
 }
 .playlist ul li a{
   text-decoration: none;
-  color: #fff;
+  color: #7C7E83;
 }
 
 /* side nav bar bottom */
@@ -128,6 +132,7 @@ aside .nav-bottom{
   background-color: grey;
   border-radius: 50%;
   vertical-align: middle;
+  color: #fff;
 }
 .line:after{
   width: 100%;
@@ -154,9 +159,10 @@ aside .nav-bottom{
   padding: 0 20px;
   color: #fff;
 }
-.main-content h2{
-  margin-top: 60px;
-  margin-bottom: 30px;
+.main-content-titles span{
+  color: #7C7E83;
+  display: inline-block;
+  padding-top: 30px;
 }
 .main-nav-menu{
   margin-bottom: 50px;
@@ -172,33 +178,34 @@ aside .nav-bottom{
   color: #7C7E83;
   padding: 0 20px;
 }
+
+/* row albums main */
 .albums-row{
   width: 100%;
   display: flex;
   gap: 20px;
+  margin: 40px 0;
 }
 .albums-row .albums{
-  width: 20%;
+  width: 16%;
 }
 .album-img img{
   width: 100%;
+}
+.album-img.round img{
+  border-radius: 50%;
 }
 .album-title, .album-text{
   text-align: center;
   padding: 5px;
 }
 .album-title{
-  font-size: 20px;
+  font-size: 1rem;
 }
 .album-text{
-  font-size: 14px;
+  font-size: 0.7rem;
   color: #7C7E83
 }
-
-
-
-
-
 
 /* FOOTER */
 footer{
@@ -295,3 +302,4 @@ footer{
   justify-content: space-evenly;
 }
 
+/* RESPONSIVE */

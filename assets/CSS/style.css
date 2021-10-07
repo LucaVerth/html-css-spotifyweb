@@ -15,8 +15,6 @@ body{
   clear: both;
 }
 
-/*  ALTEZZE E MISURE DA RIVEDERE */
-
 /* MAIN LAYOUT*/
 .container-wrap{
   width: 100%;
@@ -84,9 +82,12 @@ aside, .main{
 }
 .main-nav ul li a{
   text-decoration: none;
-  color: #7C7E83;
   font-size: 14px;
   vertical-align: middle;
+  color: #7C7E83;
+}
+.main-nav ul li a:hover{
+  color: #fff;
 }
 
 /* playlist */
@@ -120,6 +121,10 @@ aside, .main{
 .playlist ul li a{
   text-decoration: none;
   color: #7C7E83;
+}
+
+.playlist a:hover{
+  color: #fff;
 }
 
 /* side nav bar bottom */
@@ -156,6 +161,11 @@ aside .nav-bottom{
   font-size: 14px;
 }
 
+.top-main-nav:hover{
+  transform: scale(1.1);
+  transition: all .3s ease;
+}
+
 /* main content */
 .main-content{
   margin-top: 90px;
@@ -173,6 +183,9 @@ aside .nav-bottom{
   font-weight: 300;
   text-transform: uppercase;
 }
+.main-nav-menu a:hover{
+  color: #fff;
+}
 .active{
   border-bottom: 4px solid greenyellow;
 }
@@ -182,10 +195,13 @@ aside .nav-bottom{
   flex-wrap: wrap;
   list-style: none;
 }
+.main-nav-menu ul li{
+  padding: 10px;
+}
 .main-nav-menu ul li a{
   text-decoration: none;
   color: #7C7E83;
-  padding: 0 20px;
+  padding-bottom: 10px;
 }
 
 /* row albums main */
@@ -216,6 +232,37 @@ aside .nav-bottom{
   color: #7C7E83
 }
 
+/* album overlay */
+.album-img{
+  position: relative;
+  width: 100%;
+}
+.img{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.overlay{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.album-img:hover .img{
+  opacity: 0.3;
+}
+.album-img:hover .overlay{
+  opacity: 1;
+}
+.overlay i{
+  font-size: 45px;
+}
 /* FOOTER */
 footer{
   display: flex;
@@ -241,6 +288,7 @@ footer{
 }
 .like-playlist i {
   padding: 5px;
+
 }
 .song-info, .like-playlist{
   float: left;
@@ -302,6 +350,9 @@ footer{
   position: relative;
 }
 
+.ap-volume-side{
+  width: 100%;
+}
 .ap-bar.volume{
   width: 150px;
 }
@@ -347,7 +398,7 @@ footer{
 
 @media screen and (max-width:768px) {
   .albums-row .albums{
-    width: 47%;
+    width: 45%;
   }
 }
 
@@ -397,5 +448,12 @@ footer{
   #download{
     font-size: 20px;
   }
-  
+
+}
+
+/* BONUS */
+@media screen and (max-height:160px){
+  .main-head{
+    display: none;
+  }
 }

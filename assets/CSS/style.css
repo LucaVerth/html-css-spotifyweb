@@ -355,7 +355,7 @@ footer{
   cursor: pointer;
 }
 .ap-bar2{
-  width: 80px;
+  width: 30%;
   height: 4px;
   border-radius: 15px;
   background-color: #fff;
@@ -379,7 +379,7 @@ footer{
   background-color: #fff;
   position: absolute;
   top: -3px;
-  left: 80px;
+  left: 30%;
   display: none;
 }
 .ap-bar2:hover + #ap-slider {
@@ -420,7 +420,13 @@ footer{
     width: 45%;
   }
   .ap-bar.volume{
-    width: 50%;
+    width: 80%;
+  }
+  #ap-slider{
+    left: 30%;
+  }
+  .ap-bar2{
+    width: 30%;
   }
 }
 
@@ -471,13 +477,13 @@ footer{
     font-size: 20px;
   }
   .ap-bar.volume{
-    width: 50%;
+    width: 75%;
   }
   #ap-slider{
-    left: 15px;
+    left: 30%;
   }
   .ap-bar2{
-    width: 15px;
+    width: 30%;
   }
 }
 

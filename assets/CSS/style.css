@@ -122,7 +122,6 @@ aside, .main{
   text-decoration: none;
   color: #7C7E83;
 }
-
 .playlist a:hover{
   color: #fff;
 }
@@ -288,7 +287,11 @@ footer{
 }
 .like-playlist i {
   padding: 5px;
-
+  color: #7C7E83;
+}
+.like-playlist i:hover{
+  color: #fff;
+  cursor: pointer;
 }
 .song-info, .like-playlist{
   float: left;
@@ -306,6 +309,11 @@ footer{
 }
 .band-img, .band-song-name{
   float: left;
+}
+.band-song-name p:hover{
+  color: #fff;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 /* footer central */
@@ -325,6 +333,10 @@ footer{
 }
 .player-input i:nth-child(3){
   font-size: 30px;
+}
+.player-input i:nth-child(3):hover{
+  transform: scale(1.1);
+  transition: all 0.2s ease;
 }
 .player-bar{
   display: flex;
@@ -349,7 +361,6 @@ footer{
   background-color: #fff;
   position: relative;
 }
-
 .ap-volume-side{
   width: 100%;
 }
@@ -359,6 +370,7 @@ footer{
 .timer{
   font-size: 10px;
 }
+
 /* sliders */
 #ap-slider{
   width: 10px;
@@ -373,6 +385,9 @@ footer{
 .ap-bar2:hover + #ap-slider {
   display: block;
 }
+.ap-bar2:hover{
+  background-color: greenyellow;
+}
 
 /* footer left */
 .foot-right{
@@ -381,9 +396,13 @@ footer{
   width: 300px;
 }
 .ap-side{
-  width: 100px;
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  gap: 5px;
+}
+.ap-volume-side{
+  width: 100%;
 }
 
 /* RESPONSIVE */
@@ -399,6 +418,9 @@ footer{
 @media screen and (max-width:768px) {
   .albums-row .albums{
     width: 45%;
+  }
+  .ap-bar.volume{
+    width: 50%;
   }
 }
 
@@ -448,7 +470,15 @@ footer{
   #download{
     font-size: 20px;
   }
-
+  .ap-bar.volume{
+    width: 50%;
+  }
+  #ap-slider{
+    left: 15px;
+  }
+  .ap-bar2{
+    width: 15px;
+  }
 }
 
 /* BONUS */

@@ -67,6 +67,9 @@ aside, .main{
   width: 80%;
   margin-bottom: 25px;
 }
+.img2{
+  display: none;
+}
 
 /* main nav */
 .main-nav ul{
@@ -75,7 +78,7 @@ aside, .main{
 .main-nav ul li{
   margin-bottom: 10px;
 }
-.main-nav ul li a img{
+.main-nav ul li img{
   width: 15%;
   vertical-align: middle;
 }
@@ -166,6 +169,12 @@ aside .nav-bottom{
 }
 .main-nav-menu{
   margin-bottom: 50px;
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.active{
+  border-bottom: 4px solid greenyellow;
 }
 .main-nav-menu ul{
   display: flex;
@@ -282,12 +291,36 @@ footer{
   border-radius: 15px;
   background-color: grey;
   margin: 0 10px;
+  position: relative;
+  cursor: pointer;
 }
+.ap-bar2{
+  width: 80px;
+  height: 4px;
+  border-radius: 15px;
+  background-color: #fff;
+  position: relative;
+}
+
 .ap-bar.volume{
   width: 150px;
 }
 .timer{
   font-size: 10px;
+}
+/* sliders */
+#ap-slider{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: -3px;
+  left: 80px;
+  display: none;
+}
+.ap-bar2:hover + #ap-slider {
+  display: block;
 }
 
 /* footer left */
@@ -303,3 +336,47 @@ footer{
 }
 
 /* RESPONSIVE */
+@media screen and (max-width:992px) {
+    .albums-row{
+      flex-wrap: wrap;
+    }
+    .albums-row .albums{
+      width: 22%;
+    }
+}
+
+@media screen and (max-width:768px) {
+  .albums-row .albums{
+    width: 47%;
+  }
+}
+
+@media  screen and (max-width:576px) {
+  .main-head{
+    width: calc(100% - 80px);
+  }
+  main .main{
+    width: calc(100% - 80px);
+  }
+  aside{
+    width: 80px;
+  }
+  .nav-top-playlist{
+    display: none;
+  }
+  .main-nav ul li a{
+    display: none;
+  }
+  .main-nav ul li img{
+    width: 70%;
+  }
+  .img1{
+    display: none;
+  }
+  .img2{
+    display: block;
+  }
+  #logo img{
+    width: 70%;
+  }
+}

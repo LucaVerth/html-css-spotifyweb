@@ -21,13 +21,14 @@
         <!-- Nav bar top section -->
         <div class="nav-top">
           <div id="logo">
-            <img src="assets/img/logo.svg" alt="">
+            <img src="assets/img/logo.svg" class="img1" alt="">
+            <img src="assets/img/logo-small.svg" class="img2" alt="">
           </div>
           <div class="main-nav">
             <ul>
-              <li><a href="#"><img src="assets/img/home.svg" alt=""> Home</a></li>
-              <li><a href="#"><img src="assets/img/search.svg" alt=""> Cerca</a></li>
-              <li><a href="#"><img src="assets/img/libreria.svg" alt=""> La Tua libreria</a></li>
+              <li><img src="assets/img/home.svg" alt=""><a href="#"> Home</a></li>
+              <li><img src="assets/img/search.svg" alt=""><a href="#"> Cerca</a></li>
+              <li><img src="assets/img/libreria.svg" alt=""><a href="#"> La Tua libreria</a></li>
             </ul>
           </div>
           <div class="nav-top-playlist">
@@ -71,12 +72,12 @@
         <div class="main-content">
           <div class="main-nav-menu">
             <ul>
-              <li><a href="#">IN EVIDENZA</a></li>
-              <li><a href="#">PODCAST</a></li>
-              <li><a href="#">CLASSIFICHE</a></li>
-              <li><a href="#">GENERI E MOOD</a></li>
-              <li><a href="#">NUOVE USCITE</a></li>
-              <li><a href="#">SCOPRI</a></li>
+              <li class="active"><a href="#">in evidenza</a></li>
+              <li><a href="#">podcast</a></li>
+              <li><a href="#">classifiche</a></li>
+              <li><a href="#">generi e mood</a></li>
+              <li><a href="#">nuove uscite</a></li>
+              <li><a href="#">scopri</a></li>
             </ul>
           </div>
 
@@ -207,11 +208,14 @@
         </div>
         <div class="player-bar">
           <div class="timer">0:25</div>
-          <div class="ap-bar"></div>
+          <div class="ap-bar">
+            <div class="ap-bar2"></div>
+            <div id="ap-slider"></div>
+          </div>
           <div class="timer">4:35</div>
         </div>
       </div>
-  
+
       <div class="foot-right">
         <div class="ap-side">
           <i class="fas fa-list"></i>
@@ -219,7 +223,10 @@
           <i class="fas fa-volume-up"></i>
         </div>
         <div class="ap-volume-side">
-          <div class="ap-bar volume"></div>
+          <div class="ap-bar volume">
+            <div class="ap-bar2"></div>
+            <div id="ap-slider"></div>
+          </div>
         </div>
       </div>
 

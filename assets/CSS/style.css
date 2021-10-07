@@ -358,14 +358,16 @@ footer{
   main .main{
     width: calc(100% - 80px);
   }
+
   aside{
     width: 80px;
   }
-  .nav-top-playlist{
+  .main-nav ul li a, .nav-top-playlist{
     display: none;
   }
-  .main-nav ul li a{
-    display: none;
+  .main-nav ul li{
+    display: flex;
+    justify-content: center;
   }
   .main-nav ul li img{
     width: 70%;
@@ -376,7 +378,24 @@ footer{
   .img2{
     display: block;
   }
+  #logo{
+    display: flex;
+    justify-content: center;
+  }
   #logo img{
     width: 70%;
+    text-align: center;
   }
+
+  .nav-bottom div span, .nav-bottom .line{
+    display: none;
+  }
+  #download, #profile{
+    text-align: center;
+    padding: 5px;
+  }  
+  #download{
+    font-size: 20px;
+  }
+  
 }
